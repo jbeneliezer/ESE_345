@@ -35,7 +35,7 @@ problem2:
 lw $t0, 0($s0)
 lw $t1, 0($s1)
 and $t2, $t0, $t1
-beq $t2, $zero, finish	# finish if A[i] and B[i] equal zero
+beq $t2, $zero, finish	# finish if A[i] or B[i] equal zero
 addi $a0, $t0, 0
 addi $a1, $t1, 0
 jal lcm_func
